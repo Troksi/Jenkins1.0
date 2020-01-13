@@ -11,6 +11,15 @@ public class AggregatorTest {
         assertThat(agr.getSum()).isEqualTo(0);
     }
 
+     @Test
+    public void testInitialState() {
+        Aggregator agr = new Aggregator();
+        double val = 20;
+        agr.addValue(val);
+        agr.reset();
+        assertThat(agr.getSum()).isEqualTo(0);
+    }
+
     @Test
     public void testSingleAddition() {
         Aggregator agr = new Aggregator();
