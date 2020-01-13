@@ -12,7 +12,7 @@ public class AggregatorTest {
     }
 
      @Test
-    public void testInitialState() {
+    public void testAdditionReset() {
         Aggregator agr = new Aggregator();
         double val = 20;
         agr.addValue(val);
